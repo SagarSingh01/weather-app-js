@@ -14,8 +14,9 @@ function Weather() {
     // Tailwind class variables
 
     // 1. Container
-    const containerClass = "min-h-screen bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#020617] flex items-center justify-center";
-    const cardClass = "w-full max-w-md rounded-3xl border-2 border-blue-300/40 bg-blue-900/80 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,140,255,0.25)] p-6 text-white transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(0,200,255,0.6)]";
+    const containerClass = "min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#020617]"; 
+    const cardClass = "w-full max-w-md rounded-3xl border-2 border-blue-300/30 bg-blue-900/80 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,140,255,0.25)] p-6 text-white transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(0,200,255,0.6)]";
+    
     // 2. Search Bar
     const searchWrapperClass = "flex items-center w-full max-w-md mx-auto bg-gradient-to-r from-white/90 to-white/70 rounded-full px-3 sm:px-4 py-2 shadow-inner border border-white/40 focus-within:ring-2 focus-within:ring-cyan-300 transition-all";
     const searchInputClass = "flex-1 min-w-0 bg-transparent text-gray-800 outline-none text-base sm:text-lg placeholder-gray-500 px-2";
