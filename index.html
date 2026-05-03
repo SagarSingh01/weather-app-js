@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./Logo/weatherApp.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Weather App -->
+
+    <div class="weather-app">
+        <!-- Search City -->
+        <div class="search-city" onkeydown="Weather(event)">
+            <input type="text" placeholder="Search City...">
+            <i class="fa-solid fa-magnifying-glass" onclick="Weather()"></i>
+        </div>
+        <!-- Show Weather Details -->
+        <div class="show-weather">
+            <div class="name">
+                <span id="name"></span>
+            </div>
+            <div class="day">
+                <span id="day"></span>
+            </div>
+            <!-- Weather Temperature -->
+            <div class="temp">
+                <span><img src="" alt="" id="icon" height="100"></span>
+                <span id="temp"></span>
+            </div>
+            <!-- Humidity & AQI & Wind Speed-->
+            <div class="humidity-aqi">
+            </div>
+        </div>
+        <!-- Wrong Search -->
+        <div class="wrong-search">
+            <span><i class="fa-solid fa-magnifying-glass"></i> No Matching Location Found!</span>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
