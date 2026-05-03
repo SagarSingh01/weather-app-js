@@ -1,5 +1,4 @@
-async function Weather(e) {
-    if (e.key === "Enter") {
+async function Weather() {
         let city = document.querySelector(".search-city > input").value;
         let weatherApp = document.querySelector(".weather-app");
         let wrongSearch = document.querySelector(".wrong-search");
@@ -10,7 +9,7 @@ async function Weather(e) {
         weatherApp.classList.remove("weather-app-show");
         wrongSearch.classList.remove("wrong-search-show");
 
-        if (city === "") {
+        if (city.trim() === "") {
             weatherShow.classList.remove("show-weather-show");
             weatherApp.classList.add("weather-app-show");
             wrongSearch.classList.add("wrong-search-show");
@@ -45,5 +44,10 @@ async function Weather(e) {
         }
 
         document.querySelector(".search-city > input").value = "";
-    }
 };
+
+document.addEventListener("keydown" , (e) => {
+    if(e.key === "Enter") {
+        Weather();
+    }
+});
