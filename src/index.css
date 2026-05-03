@@ -19,3 +19,9 @@ body {
         background-position: 0% 50%;
     }
 }
+
+@media (max-width : 500px) {
+    body {
+        overflow-y: hidden;
+    }
+}
